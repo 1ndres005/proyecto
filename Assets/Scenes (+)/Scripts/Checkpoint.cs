@@ -11,6 +11,7 @@ public class Checkpoint : MonoBehaviour
             if (spawnPointScript != null)
             {
                 spawnPointScript.GuardarCheckpoint(transform.position);
+                Debug.Log("✅ Checkpoint guardado en: " + transform.position);
             }
             else
             {
@@ -19,3 +20,4 @@ public class Checkpoint : MonoBehaviour
         }
     }
 }
+

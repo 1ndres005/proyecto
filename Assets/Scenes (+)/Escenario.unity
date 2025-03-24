@@ -1370,7 +1370,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   healthText: {fileID: 146624372}
-  playerHealth: {fileID: 866821274}
 --- !u!114 &146624372
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7113,7 +7112,7 @@ MonoBehaviour:
   totalObjectives: 9
   objectivesText: {fileID: 1069292457}
   specialObject: {fileID: 1140417747}
-  timerText: {fileID: 0}
+  timerText: {fileID: 239567352}
   timeLimit: 120
 --- !u!4 &797844393 stripped
 Transform:
@@ -7944,19 +7943,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHealth: 3
---- !u!114 &866821280
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 866821259}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ac8611ba8bedd364d8c4078299651757, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  spawnPoint: {fileID: 1778643235}
+  healthText: {fileID: 146624372}
 --- !u!1001 &867301339
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16716,6 +16703,7 @@ GameObject:
   - component: {fileID: 1650398915}
   - component: {fileID: 1650398914}
   - component: {fileID: 1650398913}
+  - component: {fileID: 1650398917}
   m_Layer: 0
   m_Name: Cube
   m_TagString: Untagged
@@ -16822,6 +16810,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1650398911}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1650398917
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1650398911}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac8611ba8bedd364d8c4078299651757, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spawnPoint: {fileID: 1650398912}
 --- !u!4 &1663592741 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4771440329235213819, guid: 759f1923cf69d1c4e9348fc95e1e9042, type: 3}
@@ -19114,9 +19115,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 2236774594757970961, guid: 44a915b466ac34f478f0004870c5667f, type: 3}
       insertIndex: -1
       addedObject: {fileID: 866821274}
-    - targetCorrespondingSourceObject: {fileID: 2236774594757970961, guid: 44a915b466ac34f478f0004870c5667f, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 866821280}
   m_SourcePrefab: {fileID: 100100000, guid: 44a915b466ac34f478f0004870c5667f, type: 3}
 --- !u!4 &1852227361 stripped
 Transform:
@@ -21066,7 +21064,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   keyObject: {fileID: 351807049}
-  timerText: {fileID: 0}
+  timerText: {fileID: 239567352}
   timeLimit: 120
 --- !u!4 &2061012827 stripped
 Transform:

@@ -1,25 +1,25 @@
 using UnityEngine;
-using UnityEngine.UI;
 using TMPro;
 
 public class HealthUI : MonoBehaviour
 {
-    public TextMeshProUGUI healthText; // UI para mostrar corazones en texto
-    public PlayerHealth playerHealth;
+    public TextMeshProUGUI healthText;
 
-    void Start()
+    void OnEnable()
     {
-        PlayerHealth.HealthChanged += UpdateUI; // Suscribirse al evento de cambio de vida
-        UpdateUI(playerHealth.CurrentHealth); // Inicializar UI
+        PlayerHealth.OnHealthChanged += UpdateHealthUI;
     }
 
-    void OnDestroy()
+    void OnDisable()
     {
-        PlayerHealth.HealthChanged -= UpdateUI; // Desuscribirse del evento
+        PlayerHealth.OnHealthChanged -= UpdateHealthUI;
     }
 
-    void UpdateUI(int currentHealth)
+    private void UpdateHealthUI(int currentHealth)
     {
-        healthText.text = "Vidas: " + currentHealth;
+        if (healthText != null)
+        {
+            healthText.text = "Vidas: " + currentHealth;
+        }
     }
 }

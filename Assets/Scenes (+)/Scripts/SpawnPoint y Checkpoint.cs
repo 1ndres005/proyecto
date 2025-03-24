@@ -5,8 +5,9 @@ public class SpawnPointyCheckpoint : MonoBehaviour
     private Vector3 lastCheckpointPosition;
     public Transform spawnPoint;
 
-    void Start()
+    void Awake()
     {
+        // Se inicia el checkpoint en la posición inicial del spawn o en la posición del objeto.
         lastCheckpointPosition = spawnPoint ? spawnPoint.position : transform.position;
     }
 
