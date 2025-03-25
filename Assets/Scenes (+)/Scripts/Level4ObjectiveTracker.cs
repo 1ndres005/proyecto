@@ -68,4 +68,5 @@ public class Level4ObjectiveTracker : MonoBehaviour
         Debug.Log("⏳ Tiempo agotado, perdiendo una vida...");
         playerHealth.TakeDamage();
     }
+
 }

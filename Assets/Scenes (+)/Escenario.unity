@@ -2344,7 +2344,11 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
+<<<<<<< Updated upstream
   m_AnchoredPosition: {x: -169.2, y: -20}
+=======
+  m_AnchoredPosition: {x: -195.90002, y: -15.900024}
+>>>>>>> Stashed changes
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 1, y: 1}
 --- !u!114 &239567352
@@ -7436,7 +7440,8 @@ MonoBehaviour:
     cr\xE1neos antes de que el tiempo se acabe y cuida tus pasos\u2026 si caes, todo
     estar\xE1 perdido. Mant\xE9n la punter\xEDa firme y los reflejos afilados para
     superar este desaf\xEDo.\n\n\xBFTendr\xE1s la precisi\xF3n y la agilidad necesarias?
-    \xA1No te detengas, la aventura sigue!"
+    \xA1No te detengas, la aventura sigue!\n\nRapido Rapido! Antes de que se te acabe
+    el tiempo debes de reclamar tu recompensa."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2100000, guid: e73a58f6e2794ae7b1b7e50b7fb811b0, type: 2}
@@ -13585,6 +13590,26 @@ PrefabInstance:
     - target: {fileID: 4000012333492518, guid: 09c2ce84a75b3324fb5c689e5ac6ce7e, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1664372777562253422, guid: 09c2ce84a75b3324fb5c689e5ac6ce7e, type: 3}
+      propertyPath: m_Size.y
+      value: 5.8865695
+      objectReference: {fileID: 0}
+    - target: {fileID: 1664372777562253422, guid: 09c2ce84a75b3324fb5c689e5ac6ce7e, type: 3}
+      propertyPath: m_Size.z
+      value: 1.2348866
+      objectReference: {fileID: 0}
+    - target: {fileID: 1664372777562253422, guid: 09c2ce84a75b3324fb5c689e5ac6ce7e, type: 3}
+      propertyPath: m_Center.x
+      value: -0.000000003101084
+      objectReference: {fileID: 0}
+    - target: {fileID: 1664372777562253422, guid: 09c2ce84a75b3324fb5c689e5ac6ce7e, type: 3}
+      propertyPath: m_Center.y
+      value: 2.9432847
+      objectReference: {fileID: 0}
+    - target: {fileID: 1664372777562253422, guid: 09c2ce84a75b3324fb5c689e5ac6ce7e, type: 3}
+      propertyPath: m_Center.z
+      value: 0.11657247
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
