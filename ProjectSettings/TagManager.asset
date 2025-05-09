@@ -3,23 +3,12 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags:
-  - Key
-  - FinalObject
-  - Mask
-  - Bottle
-  - MaskLevelTrigger
-  - ShootingKey
-  - WeaponPickup
-  - Weapon
-  - DestructibleObject
-  - Projectile
-  - KeyLevel4
+  tags: []
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - Ground
+  - 
   - Water
   - UI
   - 
