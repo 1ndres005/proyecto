@@ -10,9 +10,9 @@ public class Poder1 : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Alpha1))
         {
-            GameObject bomb = Instantiate(magicBombPrefab, firePoint.position, Quaternion.identity);
+            GameObject bomb = Instantiate(magicBombPrefab, firePoint.position, Camera.main.transform.rotation);
             Rigidbody rb = bomb.GetComponent<Rigidbody>();
-            rb.velocity = (transform.forward + Vector3.up * 0.5f) * launchForce;
+            rb.linearVelocity = (bomb.transform.forward + Vector3.up*0.5f) * launchForce;
         }
     }
 }
